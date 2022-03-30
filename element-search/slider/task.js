@@ -1,9 +1,9 @@
 const image = document.querySelectorAll(".slider__item");
 const arrows = document.querySelectorAll(".slider__arrow");
-let activImage = 0;
 
 for (const arrow of arrows) {
     arrow.addEventListener('click', () => {
+        let activImage = Array.from(image).findIndex(element => element.classList.contains("slider__item_active"));
         image[activImage].classList.remove("slider__item_active");
         if (arrow.classList.contains("slider__arrow_next")) {
             activImage = activImage + 1;
