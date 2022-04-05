@@ -1,5 +1,4 @@
 const fontSizes = document.querySelectorAll(".font-size");
-
 for (const fontSize of fontSizes) {
     fontSize.addEventListener('click', (event) => {
         const bookCurrent = document.querySelector('.book')

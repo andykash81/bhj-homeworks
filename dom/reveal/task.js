@@ -1,5 +1,4 @@
 const revails = document.querySelectorAll(".reveal");
-
 for (const reveal of revails) {
     window.addEventListener('scroll', () => {
         const {top, bottom} = reveal.getBoundingClientRect();

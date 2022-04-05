@@ -6,7 +6,6 @@ for (const rotator of rotators) {
         rotateCaseFunction(rotatorCases);
     }, 1000);
 }
-
 function rotateCaseFunction(rotatorCases) {
     for (const rotatorCase of rotatorCases) {
         if (rotatorCase.classList.contains("rotator__case_active")) {
